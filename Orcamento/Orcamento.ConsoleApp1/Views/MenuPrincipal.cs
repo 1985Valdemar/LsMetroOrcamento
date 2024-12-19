@@ -9,8 +9,6 @@ namespace Orcamento.ConsoleApp1.Views
 {
     public class MenuPrincipal
     {
-
-
         public void MenuEscolha()
         {
             int opcao = 0;
@@ -22,6 +20,7 @@ namespace Orcamento.ConsoleApp1.Views
                 Console.WriteLine("Escolha uma das opções abaixo:");
                 Console.WriteLine("1 - Menu Países");
                 Console.WriteLine("2 - Menu Estados");
+                Console.WriteLine("3 - Menu Cliente");
                 Console.WriteLine("0 - Sair");
                 Console.Write("Digite a opção desejada: ");
 
@@ -47,9 +46,13 @@ namespace Orcamento.ConsoleApp1.Views
                     paisView.Menu();
                     break;
                 //case 2:
-                    //EstadoView estadoView = new EstadoView();
-                    //estadoView.Menu();
-                    //break;
+                //EstadoView estadoView = new EstadoView();
+                //estadoView.Menu();
+                //break;
+                case 2:
+                    ClienteView clienteView = new ClienteView();
+                    clienteView.Menu();
+                    break;
                 case 0:
                     MetodosViews.Mensagem("Saindo...");
                     break;
