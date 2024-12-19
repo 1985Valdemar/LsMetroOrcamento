@@ -77,6 +77,7 @@ namespace Orcamento.ConsoleApp1.Repositories
 
                         if (dados.Length < 4)
                         {
+                            Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("Linha com dados insuficientes em países, ignorando...");
                             continue;
                         }
